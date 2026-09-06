@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velora · girly & aesthetic</title>
+    <title>💌 a little proposal · for you</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
     <style>
-        /* ----- ROOT : soft pink & girly ----- */
         * {
             margin: 0;
             padding: 0;
@@ -40,73 +39,19 @@
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
             padding: 0 12px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 16px;
+            width: 100%;
         }
 
-        /* ----- buttons : cute & rounded ----- */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 28px;
-            border-radius: 60px;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 0.3px;
-            border: 1.5px solid transparent;
-            transition: var(--transition);
-            background: white;
-            color: var(--text);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-        }
-
-        .btn-primary {
-            background: var(--pink-rose);
-            color: white;
-            border-color: var(--pink-rose);
-        }
-
-        .btn-primary:hover {
-            background: var(--rose-dark);
-            border-color: var(--rose-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(200, 120, 140, 0.25);
-        }
-
-        .btn-soft {
-            background: var(--pink-soft);
-            color: var(--rose-dark);
-            border-color: var(--pink-soft);
-        }
-
-        .btn-soft:hover {
-            background: #fddae6;
-            transform: translateY(-3px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border-color: rgba(61, 42, 51, 0.12);
-            color: var(--text);
-        }
-
-        .btn-outline:hover {
-            background: var(--text);
-            color: white;
-            border-color: var(--text);
-        }
-
-        .btn-sm {
-            padding: 6px 18px;
-            font-size: 12px;
-        }
-
-        /* ----- HEADER : dreamy & transparent ----- */
+        /* ----- header : dreamy & transparent ----- */
         header {
             padding: 12px 0;
             background: rgba(255, 245, 248, 0.7);
@@ -133,7 +78,7 @@
             align-items: center;
             gap: 6px;
             font-family: var(--font-serif);
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 400;
             letter-spacing: -0.3px;
             color: var(--text);
@@ -141,7 +86,7 @@
 
         .brand i {
             color: var(--pink-rose);
-            font-size: 24px;
+            font-size: 22px;
         }
 
         .brand .accent {
@@ -195,26 +140,6 @@
             color: var(--rose-dark);
         }
 
-        .cart-wrap {
-            position: relative;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -2px;
-            right: -2px;
-            background: var(--pink-rose);
-            color: white;
-            font-size: 10px;
-            font-weight: 700;
-            width: 18px;
-            height: 18px;
-            border-radius: 30px;
-            display: grid;
-            place-items: center;
-            border: 2px solid white;
-        }
-
         .mobile-toggle {
             display: none;
             background: var(--pink-soft);
@@ -257,35 +182,35 @@
             background: var(--pink-soft);
         }
 
-        /* ----- HERO : girly & dreamy ----- */
+        /* ----- HERO : proposal vibes ----- */
         .hero {
             background: linear-gradient(145deg, #fcecf2, #f9e0e9);
             border-radius: 48px;
-            padding: 48px 36px;
+            padding: 40px 32px;
             margin: 12px 0 20px;
             position: relative;
             overflow: hidden;
             box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+            text-align: center;
         }
 
         .hero::after {
             content: "♡";
             position: absolute;
             right: 24px;
-            bottom: 20px;
-            font-size: 80px;
-            opacity: 0.10;
+            bottom: 12px;
+            font-size: 72px;
+            opacity: 0.08;
             color: var(--pink-rose);
             transform: rotate(-4deg);
         }
 
         .hero h1 {
             font-family: var(--font-serif);
-            font-size: 42px;
+            font-size: 38px;
             font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: -0.5px;
-            max-width: 520px;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
         }
 
         .hero h1 i {
@@ -293,15 +218,7 @@
             font-style: italic;
         }
 
-        .hero p {
-            color: var(--text-soft);
-            max-width: 400px;
-            margin: 10px 0 24px;
-            font-size: 15px;
-            font-weight: 400;
-        }
-
-        .hero .badge {
+        .hero .sub-badge {
             display: inline-block;
             background: rgba(232, 160, 180, 0.15);
             color: var(--rose-dark);
@@ -314,606 +231,196 @@
             border: 0.5px solid rgba(232, 160, 180, 0.2);
         }
 
+        .hero .big-heart {
+            font-size: 52px;
+            color: var(--pink-rose);
+            margin: 6px 0 12px;
+            display: block;
+        }
+
+        .hero p {
+            color: var(--text-soft);
+            max-width: 480px;
+            margin: 8px auto 20px;
+            font-size: 15px;
+        }
+
         .hero-actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
+            justify-content: center;
         }
 
-        /* ----- section ----- */
+        /* ----- buttons : cute & rounded ----- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 32px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            border: 1.5px solid transparent;
+            transition: var(--transition);
+            background: white;
+            color: var(--text);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .btn-primary {
+            background: var(--pink-rose);
+            color: white;
+            border-color: var(--pink-rose);
+        }
+
+        .btn-primary:hover {
+            background: var(--rose-dark);
+            border-color: var(--rose-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(200, 120, 140, 0.25);
+        }
+
+        .btn-soft {
+            background: var(--pink-soft);
+            color: var(--rose-dark);
+            border-color: var(--pink-soft);
+        }
+
+        .btn-soft:hover {
+            background: #fddae6;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: rgba(61, 42, 51, 0.12);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            background: var(--text);
+            color: white;
+            border-color: var(--text);
+        }
+
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 13px;
+        }
+
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ----- stages / cards ----- */
         .section {
-            padding: 40px 0 20px;
+            padding: 20px 0 30px;
         }
 
-        .section-header {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 28px;
-        }
-
-        .section-header h2 {
-            font-family: var(--font-serif);
-            font-weight: 400;
-            font-size: 28px;
-            letter-spacing: -0.3px;
-        }
-
-        .section-header .sub {
-            color: var(--muted);
-            font-size: 14px;
-            font-weight: 400;
-            margin-top: 2px;
-        }
-
-        .view-all {
-            color: var(--rose-dark);
-            font-weight: 500;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: var(--transition);
-            text-decoration: none;
-        }
-
-        .view-all:hover {
-            gap: 12px;
-            color: var(--pink-rose);
-        }
-
-        /* ----- categories : pill style girly ----- */
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 16px;
-        }
-
-        .cat-card {
-            background: white;
-            border-radius: 80px;
-            padding: 18px 8px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-        }
-
-        .cat-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--pink-mid);
-        }
-
-        .cat-card .icon-wrap {
-            width: 48px;
-            height: 48px;
-            border-radius: 60px;
-            background: var(--pink-soft);
-            display: grid;
-            place-items: center;
-            margin: 0 auto 8px;
-            font-size: 20px;
-            color: var(--rose-dark);
-            transition: var(--transition);
-        }
-
-        .cat-card:hover .icon-wrap {
-            background: var(--pink-rose);
-            color: white;
-        }
-
-        .cat-card h4 {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text);
-        }
-
-        .cat-card .count {
-            font-size: 11px;
-            color: var(--muted);
-        }
-
-        /* ----- product cards : girly & soft ----- */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-
-        .product-card {
+        .stage-card {
             background: white;
             border-radius: 36px;
-            overflow: hidden;
+            padding: 28px 30px 32px;
             box-shadow: var(--shadow);
-            transition: var(--transition);
             border: 1px solid rgba(255, 255, 255, 0.6);
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 24px;
+            transition: var(--transition);
+            text-align: center;
         }
 
-        .product-card:hover {
-            transform: translateY(-8px);
+        .stage-card:hover {
             box-shadow: var(--shadow-hover);
             border-color: var(--pink-mid);
         }
 
-        .product-card .img-wrap {
-            background: #fdf2f5;
-            aspect-ratio: 1/1;
-            position: relative;
-            overflow: hidden;
+        .stage-card .emoji-big {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 6px;
         }
 
-        .product-card .img-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .product-card:hover .img-wrap img {
-            transform: scale(1.04);
-        }
-
-        .product-card .badge {
-            position: absolute;
-            top: 14px;
-            left: 14px;
-            background: var(--pink-rose);
-            color: white;
-            font-size: 10px;
-            font-weight: 600;
-            padding: 3px 14px;
-            border-radius: 40px;
-            letter-spacing: 0.5px;
-        }
-
-        .product-card .badge.sale {
-            background: #fad5d0;
-            color: var(--text);
-        }
-
-        .product-card .wish-btn {
-            position: absolute;
-            top: 14px;
-            right: 14px;
-            width: 34px;
-            height: 34px;
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(4px);
-            border-radius: 40px;
-            border: none;
-            color: var(--text-soft);
-            transition: var(--transition);
-            font-size: 14px;
-            display: grid;
-            place-items: center;
-        }
-
-        .product-card .wish-btn:hover {
-            background: white;
-            color: var(--pink-rose);
-            transform: scale(1.08);
-        }
-
-        .product-card .body {
-            padding: 16px 18px 8px;
-            flex: 1;
-        }
-
-        .product-card .body .category-tag {
-            font-size: 11px;
-            color: var(--muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
-
-        .product-card .body h5 {
-            font-size: 15px;
-            font-weight: 600;
+        .stage-card h3 {
+            font-family: var(--font-serif);
+            font-size: 26px;
+            font-weight: 400;
             margin: 4px 0 6px;
-            line-height: 1.3;
         }
 
-        .product-card .body .price-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .product-card .body .price {
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--text);
-        }
-
-        .product-card .body .old-price {
-            color: var(--muted);
-            text-decoration: line-through;
-            font-size: 13px;
-        }
-
-        .product-card .body .rating {
-            color: #f0b0b0;
-            font-size: 13px;
-            margin-top: 4px;
-        }
-
-        .product-card .body .rating span {
-            color: var(--muted);
-            margin-left: 4px;
-        }
-
-        .product-card .footer {
-            padding: 4px 18px 18px;
-            display: flex;
-            gap: 8px;
-        }
-
-        .product-card .footer .add-btn {
-            flex: 1;
-            padding: 10px 0;
-            border-radius: 60px;
-            background: var(--pink-soft);
-            color: var(--rose-dark);
-            font-weight: 600;
-            font-size: 13px;
-            border: none;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .product-card .footer .add-btn:hover {
-            background: var(--pink-rose);
-            color: white;
-        }
-
-        .product-card .footer .add-btn.added {
-            background: #c9d9d0;
-            color: white;
-        }
-
-        /* ----- DEAL : romantic & elegant ----- */
-        .deal-wrap {
-            display: flex;
-            background: white;
-            border-radius: 44px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-
-        .deal-wrap .deal-img {
-            flex: 0 0 46%;
-            background: #f8e4ea;
-            min-height: 240px;
-        }
-
-        .deal-wrap .deal-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .deal-wrap .deal-content {
-            padding: 32px 34px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .deal-wrap .deal-content .tag {
-            background: var(--pink-soft);
-            color: var(--rose-dark);
-            padding: 4px 18px;
-            border-radius: 60px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            align-self: flex-start;
-            margin-bottom: 8px;
-        }
-
-        .deal-wrap .deal-content h3 {
-            font-family: var(--font-serif);
-            font-size: 28px;
-            font-weight: 400;
-        }
-
-        .deal-wrap .deal-content .desc {
+        .stage-card .sub {
             color: var(--text-soft);
             font-size: 14px;
-            margin: 4px 0 12px;
+            margin-bottom: 16px;
         }
 
-        .deal-wrap .deal-content .price-big {
-            font-size: 30px;
-            font-weight: 700;
-            color: var(--text);
-        }
-
-        .deal-wrap .deal-content .price-big .old {
-            font-size: 18px;
-            font-weight: 400;
-            color: var(--muted);
-            text-decoration: line-through;
-            margin-left: 10px;
-        }
-
-        .deal-wrap .deal-content .stock {
-            font-size: 13px;
-            color: var(--muted);
-            margin: 2px 0 8px;
-        }
-
-        .deal-wrap .deal-content .stock strong {
-            color: var(--rose-dark);
-        }
-
-        .timer-grid {
+        .stage-card .options {
             display: flex;
-            gap: 10px;
-            margin: 14px 0 18px;
-        }
-
-        .timer-box {
-            background: var(--bg);
-            padding: 8px 14px;
-            border-radius: 20px;
-            min-width: 60px;
-            text-align: center;
-        }
-
-        .timer-box .num {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text);
-            line-height: 1.2;
-        }
-
-        .timer-box .label {
-            font-size: 10px;
-            color: var(--muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* ----- testimonials : soft scroll ----- */
-        .testimonials-scroll {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding: 8px 4px 20px;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .testimonials-scroll::-webkit-scrollbar {
-            height: 4px;
-        }
-        .testimonials-scroll::-webkit-scrollbar-thumb {
-            background: var(--pink-mid);
-            border-radius: 20px;
-        }
-
-        .testimonial-card {
-            flex: 0 0 300px;
-            background: white;
-            border-radius: 36px;
-            padding: 24px 26px;
-            box-shadow: var(--shadow);
-            scroll-snap-align: start;
-            transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-
-        .testimonial-card:hover {
-            box-shadow: var(--shadow-hover);
-        }
-
-        .testimonial-card .stars {
-            color: #f0b0b0;
-            font-size: 15px;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .testimonial-card blockquote {
-            font-size: 14px;
-            line-height: 1.6;
-            color: var(--text);
-            font-style: italic;
-            margin-bottom: 12px;
-        }
-
-        .testimonial-card .author {
-            display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             gap: 12px;
+            justify-content: center;
+            margin-top: 8px;
         }
 
-        .testimonial-card .author .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 60px;
-            object-fit: cover;
-            background: var(--pink-soft);
+        .stage-card .options .btn {
+            min-width: 120px;
+            justify-content: center;
         }
 
-        .testimonial-card .author .name {
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .testimonial-card .author .role {
-            font-size: 12px;
+        .stage-card .progress {
+            margin: 16px 0 6px;
+            font-size: 13px;
             color: var(--muted);
         }
 
-        /* ----- newsletter : pretty & pink ----- */
-        .newsletter-wrap {
-            background: linear-gradient(145deg, #fcecf2, #f9e0e9);
-            border-radius: 48px;
-            padding: 40px 44px;
+        .stage-card .progress .dots {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
         }
 
-        .newsletter-wrap .text h3 {
-            font-family: var(--font-serif);
-            font-weight: 400;
-            font-size: 24px;
-        }
-
-        .newsletter-wrap .text p {
-            color: var(--text-soft);
-            font-size: 14px;
-            margin-top: 2px;
-        }
-
-        .newsletter-wrap form {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            flex: 1;
-            max-width: 440px;
-        }
-
-        .newsletter-wrap form input {
-            flex: 1;
-            min-width: 180px;
-            padding: 12px 20px;
-            border-radius: 60px;
-            border: 1.5px solid rgba(232, 160, 180, 0.2);
-            background: white;
-            font-size: 14px;
+        .stage-card .progress .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            background: var(--pink-soft);
             transition: var(--transition);
-            outline: none;
         }
 
-        .newsletter-wrap form input:focus {
-            border-color: var(--pink-rose);
-            box-shadow: 0 0 0 4px rgba(232, 160, 180, 0.1);
-        }
-
-        .newsletter-wrap form .btn {
+        .stage-card .progress .dot.active {
             background: var(--pink-rose);
-            color: white;
-            border-color: var(--pink-rose);
-            padding: 12px 28px;
+            width: 24px;
         }
 
-        .newsletter-wrap form .btn:hover {
+        .stage-card .progress .dot.done {
             background: var(--rose-dark);
         }
 
-        #newsletterMsg {
-            width: 100%;
-            margin-top: 6px;
-            font-size: 13px;
+        .confetti-message {
+            font-size: 18px;
             color: var(--rose-dark);
+            font-weight: 500;
+            margin-top: 12px;
         }
 
-        /* ----- footer : delicate ----- */
+        .hidden-stage {
+            display: none;
+        }
+
+        /* ----- footer ----- */
         footer {
-            padding: 32px 0 16px;
-            margin-top: 8px;
-            border-top: 1px solid rgba(200, 120, 140, 0.10);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 32px;
-            margin-bottom: 24px;
-        }
-
-        .footer-grid .brand-col p {
-            color: var(--text-soft);
-            font-size: 14px;
-            max-width: 260px;
-            margin: 6px 0 12px;
-        }
-
-        .footer-grid .brand-col .socials {
-            display: flex;
-            gap: 8px;
-        }
-
-        .footer-grid .brand-col .socials a {
-            width: 36px;
-            height: 36px;
-            border-radius: 40px;
-            background: var(--pink-soft);
-            display: grid;
-            place-items: center;
-            color: var(--rose-dark);
-            transition: var(--transition);
-            font-size: 14px;
-            text-decoration: none;
-        }
-
-        .footer-grid .brand-col .socials a:hover {
-            background: var(--pink-rose);
-            color: white;
-        }
-
-        .footer-grid .col h5 {
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 12px;
-            color: var(--text);
-        }
-
-        .footer-grid .col ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .footer-grid .col ul a {
-            color: var(--text-soft);
-            font-size: 13px;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .footer-grid .col ul a:hover {
-            color: var(--rose-dark);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 14px;
+            padding: 20px 0 12px;
+            margin-top: auto;
             border-top: 1px solid rgba(200, 120, 140, 0.08);
+            text-align: center;
             color: var(--muted);
             font-size: 12px;
         }
 
         /* ----- responsive ----- */
-        @media (max-width: 1000px) {
-            .products-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .categories-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 780px) {
+        @media (max-width: 700px) {
             .nav-links {
                 display: none;
             }
@@ -922,58 +429,38 @@
                 place-items: center;
             }
             .hero h1 {
-                font-size: 32px;
+                font-size: 28px;
             }
-            .products-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .stage-card {
+                padding: 22px 18px;
             }
-            .categories-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .stage-card .options .btn {
+                min-width: 100px;
+                padding: 10px 18px;
+                font-size: 13px;
             }
-            .deal-wrap {
-                flex-direction: column;
-            }
-            .deal-wrap .deal-img {
-                flex: 0 0 180px;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 24px;
+            .stage-card h3 {
+                font-size: 22px;
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 450px) {
             .hero {
-                padding: 32px 20px;
+                padding: 28px 16px;
             }
             .hero h1 {
-                font-size: 26px;
+                font-size: 24px;
             }
-            .products-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
+            .hero .big-heart {
+                font-size: 38px;
             }
-            .categories-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-            .deal-wrap .deal-content {
-                padding: 20px;
-            }
-            .newsletter-wrap {
-                padding: 28px 20px;
+            .stage-card .options {
                 flex-direction: column;
-                text-align: center;
+                align-items: center;
             }
-            .newsletter-wrap form {
-                max-width: 100%;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-            .container {
-                padding: 0 12px;
+            .stage-card .options .btn {
+                width: 100%;
+                max-width: 220px;
             }
         }
     </style>
@@ -995,21 +482,14 @@
 
             <ul class="nav-links">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#categories">Shop</a></li>
-                <li><a href="#products">New</a></li>
-                <li><a href="#deals">Offers</a></li>
-                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#stage1">The Ask</a></li>
+                <li><a href="#stage2">Clues</a></li>
+                <li><a href="#stage3">Finally</a></li>
             </ul>
 
             <div class="header-actions">
-                <button class="icon-btn" aria-label="search"><i class="far fa-search"></i></button>
-                <button class="icon-btn" aria-label="account"><i class="far fa-user"></i></button>
-                <div class="cart-wrap">
-                    <button class="icon-btn" id="cartBtn" aria-label="cart">
-                        <i class="fas fa-shopping-bag"></i>
-                    </button>
-                    <span class="cart-count" id="cartCount">0</span>
-                </div>
+                <button class="icon-btn" aria-label="heart"><i class="fas fa-heart" style="color:var(--pink-rose);"></i></button>
+                <button class="icon-btn" aria-label="sparkle"><i class="fas fa-sparkles" style="color:var(--pink-rose);"></i></button>
             </div>
         </div>
 
@@ -1017,388 +497,234 @@
         <div id="mobileMenu" class="container" style="display:none;">
             <ul>
                 <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#categories"><i class="fas fa-tag"></i> Categories</a></li>
-                <li><a href="#products"><i class="fas fa-sparkles"></i> New</a></li>
-                <li><a href="#deals"><i class="fas fa-clock"></i> Deals</a></li>
-                <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#stage1"><i class="fas fa-question"></i> The Ask</a></li>
+                <li><a href="#stage2"><i class="fas fa-search"></i> Clues</a></li>
+                <li><a href="#stage3"><i class="fas fa-check-circle"></i> Finally</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- MAIN -->
     <main>
-        <!-- HERO -->
+        <!-- HERO : proposal intro -->
         <section class="container hero">
             <div>
-                <span class="badge"><i class="fas fa-feather-alt"></i> spring edit</span>
-                <h1>Where <i>style</i> meets <br />everyday grace.</h1>
-                <p>Curated pieces, soft tones, and timeless elegance — designed for the modern soul.</p>
+                <span class="sub-badge"><i class="fas fa-feather-alt"></i> for you, only</span>
+                <span class="big-heart">💌</span>
+                <h1>i've been <i>thinking</i> about <br />you + me</h1>
+                <p>there's something i've been wanting to ask you. but it's a little journey — are you ready?</p>
                 <div class="hero-actions">
-                    <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Explore</button>
-                    <button class="btn btn-soft" id="exploreDeals"><i class="fas fa-gift"></i> Offers</button>
+                    <button class="btn btn-primary" id="startAdventure"><i class="fas fa-arrow-right"></i> yes, let's go</button>
+                    <button class="btn btn-soft" id="startAdventure2"><i class="fas fa-heart"></i> i'm curious</button>
                 </div>
             </div>
         </section>
 
-        <!-- CATEGORIES -->
-        <section class="section" id="categories">
+        <!-- STAGES (all in one flow) -->
+        <section class="section" id="stageContainer">
             <div class="container">
-                <div class="section-header">
-                    <div><h2>Categories</h2><div class="sub">find your vibe</div></div>
-                    <a href="#" class="view-all">All <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="categories-grid" id="categoriesGrid"></div>
-            </div>
-        </section>
 
-        <!-- PRODUCTS -->
-        <section class="section" id="products">
-            <div class="container">
-                <div class="section-header">
-                    <div><h2>New arrivals</h2><div class="sub">fresh & lovely</div></div>
-                    <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="products-grid" id="productsGrid"></div>
-            </div>
-        </section>
-
-        <!-- DEAL -->
-        <section class="section" id="deals">
-            <div class="container">
-                <div class="section-header">
-                    <div><h2>✨ golden hour</h2><div class="sub">limited edition</div></div>
-                </div>
-                <div class="deal-wrap">
-                    <div class="deal-img">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="soft sneaker" loading="lazy" />
+                <!-- STAGE 1 : the first ask (no reject) -->
+                <div class="stage-card" id="stage1">
+                    <span class="emoji-big">🌷</span>
+                    <h3>will you be my <br />little adventure?</h3>
+                    <p class="sub">i have a feeling we'd be magic together.</p>
+                    <div class="options">
+                        <button class="btn btn-primary stage-btn" data-next="stage2">yes, tell me more</button>
+                        <button class="btn btn-soft stage-btn" data-next="stage2">i'm intrigued</button>
+                        <button class="btn btn-outline stage-btn" data-next="stage2">hmm, go on...</button>
                     </div>
-                    <div class="deal-content">
-                        <span class="tag"><i class="fas fa-sparkles"></i> just dropped</span>
-                        <h3>Velora Luxe Sneaker</h3>
-                        <p class="desc">Minimal, plush, and made for everyday elegance.</p>
-                        <div>
-                            <span class="price-big">$129 <span class="old">$189</span></span>
+                    <div class="progress">
+                        <div class="dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
-                        <p class="stock">only <strong>8</strong> pairs left</p>
-                        <div class="timer-grid" id="dealTimer">
-                            <div class="timer-box"><div class="num" id="dealDays">0</div><div class="label">days</div></div>
-                            <div class="timer-box"><div class="num" id="dealHours">00</div><div class="label">hrs</div></div>
-                            <div class="timer-box"><div class="num" id="dealMinutes">00</div><div class="label">min</div></div>
-                            <div class="timer-box"><div class="num" id="dealSeconds">00</div><div class="label">sec</div></div>
+                    </div>
+                </div>
+
+                <!-- STAGE 2 : sweet confusion (no reject, only playful options) -->
+                <div class="stage-card hidden-stage" id="stage2">
+                    <span class="emoji-big">🍬</span>
+                    <h3>wait, there's more</h3>
+                    <p class="sub">i made a little list of reasons why you should say yes.<br /> but you can't say no — it's not allowed ✧</p>
+                    <div class="options">
+                        <button class="btn btn-primary stage-btn" data-next="stage3">okay, you're cute</button>
+                        <button class="btn btn-soft stage-btn" data-next="stage3">i'm listening...</button>
+                        <button class="btn btn-outline stage-btn" data-next="stage3">what else?</button>
+                        <button class="btn btn-soft stage-btn" data-next="stage3">that's sweet</button>
+                    </div>
+                    <div class="progress">
+                        <div class="dots">
+                            <span class="dot done"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
-                        <button class="btn btn-primary" id="buyDeal"><i class="fas fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <div style="margin-top:12px;font-size:13px;color:var(--muted);">
+                        <i class="fas fa-arrow-left" style="opacity:0.3;"></i> no going back, only forward
                     </div>
                 </div>
+
+                <!-- STAGE 3 : almost there (still no reject) -->
+                <div class="stage-card hidden-stage" id="stage3">
+                    <span class="emoji-big">✨</span>
+                    <h3>one last thing...</h3>
+                    <p class="sub">i've been saving the best for last. <br />you're kind, brilliant, and honestly? i'd love to take you out.</p>
+                    <div class="options">
+                        <button class="btn btn-primary stage-btn" data-next="stage4">yes, i'd love that</button>
+                        <button class="btn btn-soft stage-btn" data-next="stage4">you're making me blush</button>
+                        <button class="btn btn-outline stage-btn" data-next="stage4">okay, but you're paying</button>
+                        <button class="btn btn-soft stage-btn" data-next="stage4">i was hoping you'd ask</button>
+                    </div>
+                    <div class="progress">
+                        <div class="dots">
+                            <span class="dot done"></span>
+                            <span class="dot done"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STAGE 4 : FINAL — no reject, only date confirmation -->
+                <div class="stage-card hidden-stage" id="stage4">
+                    <span class="emoji-big">🎉</span>
+                    <h3>it's a date!</h3>
+                    <p class="sub">you said yes (well, you kinda had to — but i'm so glad you did).</p>
+                    <div style="font-size: 48px; margin: 8px 0;">🥂</div>
+                    <p style="color:var(--text-soft); font-size: 15px; max-width: 380px; margin: 0 auto 16px;">
+                        saturday, 7pm. i'll pick you up. wear something cute — you always do.
+                    </p>
+                    <div class="options" style="flex-direction:column; align-items:center; gap:10px;">
+                        <button class="btn btn-primary btn-block" id="confirmDate" style="max-width:300px;">
+                            <i class="fas fa-check-circle"></i> i'll be there
+                        </button>
+                        <button class="btn btn-soft btn-block" id="confirmDate2" style="max-width:300px;">
+                            <i class="fas fa-heart"></i> can't wait
+                        </button>
+                        <div style="margin-top:6px; font-size:13px; color:var(--muted);">
+                            <i class="fas fa-arrow-left" style="opacity:0.2;"></i> no take-backs, you're mine now
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="dots">
+                            <span class="dot done"></span>
+                            <span class="dot done"></span>
+                            <span class="dot done"></span>
+                            <span class="dot active"></span>
+                        </div>
+                    </div>
+                    <div class="confetti-message" id="finalMessage">
+                        <i class="fas fa-sparkles"></i> it's official ✧
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- TESTIMONIALS -->
-        <section class="section" id="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <div><h2>Kind words</h2><div class="sub">from our community</div></div>
-                </div>
-                <div class="testimonials-scroll" id="testimonialsList"></div>
-            </div>
-        </section>
-
-        <!-- NEWSLETTER -->
-        <section class="section">
-            <div class="container">
-                <div class="newsletter-wrap">
-                    <div class="text">
-                        <h3>join the circle</h3>
-                        <p>gentle notes, early access & little joys</p>
-                    </div>
-                    <form id="newsletterForm" onsubmit="return false;">
-                        <input type="email" id="newsletterEmail" placeholder="your email" required />
-                        <button class="btn" id="subscribeBtn"><i class="fas fa-paper-plane"></i> Subscribe</button>
-                        <div id="newsletterMsg"></div>
-                    </form>
-                </div>
-            </div>
+        <!-- extra cute note -->
+        <section class="container" style="text-align:center; padding: 10px 0 30px;">
+            <p style="color:var(--muted); font-size:13px; max-width:400px; margin:0 auto;">
+                <i class="fas fa-feather-alt" style="color:var(--pink-rose);"></i>
+                every step leads to something beautiful.
+            </p>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="brand-col">
-                    <div class="brand"><i class="fas fa-feather-alt"></i> Velora<span class="accent">.</span></div>
-                    <p>classy, aesthetic, & crafted with love.</p>
-                    <div class="socials">
-                        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="col"><h5>Shop</h5><ul><li><a href="#">New</a></li><li><a href="#">Best sellers</a></li><li><a href="#">Gifts</a></li></ul></div>
-                <div class="col"><h5>About</h5><ul><li><a href="#">Our story</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Press</a></li></ul></div>
-                <div class="col"><h5>Support</h5><ul><li><a href="#">FAQ</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact</a></li></ul></div>
-            </div>
-            <div class="footer-bottom">&copy; <span id="year"></span> Velora — all rights reserved.</div>
+            <p>💕 made with a little courage & a lot of heart.</p>
         </div>
     </footer>
 
     <script>
-        // ---- data ----
-        const CATEGORIES = [
-            { id: 'wear', name: 'Wear', icon: 'fa-tshirt', count: 34 },
-            { id: 'foot', name: 'Footwear', icon: 'fa-shoe-prints', count: 22 },
-            { id: 'bags', name: 'Bags', icon: 'fa-bag-shopping', count: 18 },
-            { id: 'jewelry', name: 'Jewelry', icon: 'fa-gem', count: 27 },
-            { id: 'beauty', name: 'Beauty', icon: 'fa-spa', count: 15 },
-            { id: 'home', name: 'Home', icon: 'fa-couch', count: 20 }
-        ];
+        // ---- stage navigation (no reject, only forward) ----
+        const stage1 = document.getElementById('stage1');
+        const stage2 = document.getElementById('stage2');
+        const stage3 = document.getElementById('stage3');
+        const stage4 = document.getElementById('stage4');
 
-        const PRODUCTS = [
-            { id: 1, title: 'Silk Blend Dress', price: 148, oldPrice: 198, rating: 5, reviews: 67, badge: 'new',
-                img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80',
-                category: 'Wear' },
-            { id: 2, title: 'Leather Crossbody', price: 89, rating: 4, reviews: 42, badge: '',
-                img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80',
-                category: 'Bags' },
-            { id: 3, title: 'Pearl Drop Earrings', price: 59, oldPrice: 89, rating: 5, reviews: 93, badge: 'sale',
-                img: 'https://images.unsplash.com/photo-1535632066927-ab7f9ab60b8e?auto=format&fit=crop&w=600&q=80',
-                category: 'Jewelry' },
-            { id: 4, title: 'Linen Jumpsuit', price: 132, rating: 4, reviews: 31, badge: '',
-                img: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80',
-                category: 'Wear' },
-            { id: 5, title: 'Ceramic Vase', price: 76, rating: 5, reviews: 29, badge: 'new',
-                img: 'https://images.unsplash.com/photo-1612198188940-1a844a94256b?auto=format&fit=crop&w=600&q=80',
-                category: 'Home' },
-            { id: 6, title: 'Gold Hoops', price: 44, oldPrice: 68, rating: 4, reviews: 77, badge: 'sale',
-                img: 'https://images.unsplash.com/photo-1535632066927-ab7f9ab60b8e?auto=format&fit=crop&w=600&q=80',
-                category: 'Jewelry' },
-            { id: 7, title: 'Bamboo Tote', price: 97, rating: 5, reviews: 54, badge: '',
-                img: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80',
-                category: 'Bags' },
-            { id: 8, title: 'Aromatherapy Set', price: 62, rating: 4, reviews: 48, badge: '',
-                img: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80',
-                category: 'Beauty' }
-        ];
+        const allStages = [stage1, stage2, stage3, stage4];
 
-        const TESTIMONIALS = [{
-            name: 'Lena M.',
-            role: 'slow living advocate',
-            avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80',
-            text: 'Everything feels so thoughtful and beautiful. My new favorite shop.',
-            stars: 5
-        }, {
-            name: 'Noah W.',
-            role: 'designer',
-            avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80',
-            text: 'The quality is outstanding. I love the minimalist, elegant aesthetic.',
-            stars: 5
-        }, {
-            name: 'Mia C.',
-            role: 'curator',
-            avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80',
-            text: 'Such a charming experience — from browsing to unboxing. 10/10.',
-            stars: 5
-        }, {
-            name: 'Eli R.',
-            role: 'writer',
-            avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80',
-            text: 'I always find something special here. The curation is impeccable.',
-            stars: 4
-        }];
+        function showStage(id) {
+            allStages.forEach(s => s.classList.add('hidden-stage'));
+            const target = document.getElementById(id);
+            if (target) target.classList.remove('hidden-stage');
+            // scroll to stage
+            document.getElementById('stageContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
 
-        // ---- state ----
-        let cartCount = 0;
+        // attach listeners to all .stage-btn
+        document.querySelectorAll('.stage-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const next = this.dataset.next;
+                if (next) {
+                    showStage(next);
+                    // tiny celebration haptic
+                    if (next === 'stage4') {
+                        // final touch
+                        document.getElementById('finalMessage').innerHTML =
+                            '<i class="fas fa-sparkles"></i> you just made my day ✧';
+                    }
+                }
+            });
+        });
 
-        // ---- refs ----
-        const categoriesGrid = document.getElementById('categoriesGrid');
-        const productsGrid = document.getElementById('productsGrid');
-        const cartCountEl = document.getElementById('cartCount');
+        // hero buttons -> start at stage1
+        document.getElementById('startAdventure').addEventListener('click', () => {
+            showStage('stage1');
+        });
+        document.getElementById('startAdventure2').addEventListener('click', () => {
+            showStage('stage1');
+        });
+
+        // final confirm buttons (just show a cute alert, no reject)
+        document.getElementById('confirmDate').addEventListener('click', function() {
+            alert('💖 yay! it\'s a date. i\'ll text you the details. 🥂');
+            this.innerHTML = '<i class="fas fa-check-circle"></i> confirmed!';
+            this.style.background = '#b7cfc4';
+            this.style.borderColor = '#b7cfc4';
+        });
+        document.getElementById('confirmDate2').addEventListener('click', function() {
+            alert('💕 perfect. i\'ve been looking forward to this.');
+            this.innerHTML = '<i class="fas fa-heart"></i> can\'t wait!';
+            this.style.background = '#b7cfc4';
+            this.style.borderColor = '#b7cfc4';
+        });
+
+        // ---- mobile menu ----
         const mobileToggle = document.getElementById('mobileToggle');
         const mobileMenu = document.getElementById('mobileMenu');
-        const testimonialsList = document.getElementById('testimonialsList');
-        const newsletterEmail = document.getElementById('newsletterEmail');
-        const newsletterMsg = document.getElementById('newsletterMsg');
-
-        // ---- helpers ----
-        function escapeHtml(t) { return String(t).replace(/[&<>"']/g, s => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;',
-                "'": '&#39;' } [s])); }
-
-        function updateCart() {
-            cartCountEl.textContent = cartCount;
-            cartCountEl.style.transform = 'scale(1.25)';
-            setTimeout(() => cartCountEl.style.transform = 'scale(1)', 200);
-        }
-
-        function addToCart(id, btn) {
-            const p = PRODUCTS.find(x => x.id === id);
-            if (!p) return;
-            cartCount++;
-            updateCart();
-            if (btn) {
-                const orig = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i> added';
-                btn.classList.add('added');
-                setTimeout(() => { btn.innerHTML = orig;
-                    btn.classList.remove('added'); }, 1400);
-            }
-        }
-
-        // ---- render ----
-        function renderCategories() {
-            categoriesGrid.innerHTML = '';
-            CATEGORIES.forEach(c => {
-                const el = document.createElement('div');
-                el.className = 'cat-card';
-                el.innerHTML = `
-                    <div class="icon-wrap"><i class="fas ${c.icon}"></i></div>
-                    <h4>${c.name}</h4>
-                    <div class="count">${c.count} items</div>
-                `;
-                el.addEventListener('click', () => {
-                    const q = c.name.toLowerCase();
-                    const filtered = PRODUCTS.filter(p => p.category.toLowerCase().includes(q));
-                    renderProducts(filtered);
-                    document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                });
-                categoriesGrid.appendChild(el);
-            });
-        }
-
-        function renderProducts(list) {
-            productsGrid.innerHTML = '';
-            if (!list.length) {
-                productsGrid.innerHTML =
-                    `<p style="grid-column:1/-1;text-align:center;padding:30px;color:var(--muted);">nothing here yet ✧</p>`;
-                return;
-            }
-            list.forEach(p => {
-                const el = document.createElement('article');
-                el.className = 'product-card';
-                const badgeClass = p.badge === 'sale' ? 'sale' : '';
-                const badgeHtml = p.badge ? `<span class="badge ${badgeClass}">${p.badge}</span>` : '';
-                const oldHtml = p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : '';
-                const stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5 - Math.round(p.rating));
-                el.innerHTML = `
-                    <div class="img-wrap">
-                        <img src="${p.img}" alt="${escapeHtml(p.title)}" loading="lazy">
-                        ${badgeHtml}
-                        <button class="wish-btn" aria-label="wishlist"><i class="far fa-heart"></i></button>
-                    </div>
-                    <div class="body">
-                        <div class="category-tag">${p.category}</div>
-                        <h5>${escapeHtml(p.title)}</h5>
-                        <div class="price-row"><span class="price">$${p.price}</span>${oldHtml}</div>
-                        <div class="rating">${stars} <span>(${p.reviews})</span></div>
-                    </div>
-                    <div class="footer">
-                        <button class="add-btn" data-id="${p.id}"><i class="fas fa-cart-plus"></i> Add</button>
-                    </div>
-                `;
-                productsGrid.appendChild(el);
-            });
-            productsGrid.querySelectorAll('.add-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    addToCart(Number(this.dataset.id), this);
-                });
-            });
-        }
-
-        function renderTestimonials() {
-            testimonialsList.innerHTML = '';
-            TESTIMONIALS.forEach(t => {
-                const stars = '★'.repeat(t.stars) + '☆'.repeat(5 - t.stars);
-                const el = document.createElement('div');
-                el.className = 'testimonial-card';
-                el.innerHTML = `
-                    <div class="stars">${stars}</div>
-                    <blockquote>“${escapeHtml(t.text)}”</blockquote>
-                    <div class="author">
-                        <img class="avatar" src="${t.avatar}" alt="${escapeHtml(t.name)}" loading="lazy">
-                        <div><div class="name">${escapeHtml(t.name)}</div><div class="role">${escapeHtml(t.role)}</div></div>
-                    </div>
-                `;
-                testimonialsList.appendChild(el);
-            });
-        }
-
-        // ---- timer ----
-        (function dealTimer() {
-            const now = new Date();
-            const target = new Date(now.getTime() + (22 * 60 + 30) * 60 * 1000);
-            const el = (id) => document.getElementById(id);
-            setInterval(() => {
-                const diff = target - new Date();
-                if (diff <= 0) { el('dealDays').textContent = '0';
-                    el('dealHours').textContent = '00';
-                    el('dealMinutes').textContent = '00';
-                    el('dealSeconds').textContent = '00'; return; }
-                const d = Math.floor(diff / (24 * 3600 * 1000));
-                const h = Math.floor((diff % (24 * 3600 * 1000)) / (3600 * 1000));
-                const m = Math.floor((diff % (3600 * 1000)) / (60 * 1000));
-                const s = Math.floor((diff % (60 * 1000)) / 1000);
-                el('dealDays').textContent = d;
-                el('dealHours').textContent = String(h).padStart(2, '0');
-                el('dealMinutes').textContent = String(m).padStart(2, '0');
-                el('dealSeconds').textContent = String(s).padStart(2, '0');
-            }, 1000);
-        })();
-
-        // ---- events ----
         mobileToggle.addEventListener('click', () => {
             const isOpen = mobileMenu.style.display === 'block';
             mobileMenu.style.display = isOpen ? 'none' : 'block';
             mobileToggle.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
         });
 
-        document.getElementById('shopNow').addEventListener('click', () => {
-            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-        });
-        document.getElementById('exploreDeals').addEventListener('click', () => {
-            document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('buyDeal').addEventListener('click', function() {
-            cartCount++;
-            updateCart();
-            const orig = this.innerHTML;
-            this.innerHTML = '<i class="fas fa-check"></i> added!';
-            this.style.background = '#c9d9d0';
-            setTimeout(() => { this.innerHTML = orig;
-                this.style.background = ''; }, 1500);
+        // close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
         });
 
-        document.getElementById('cartBtn').addEventListener('click', () => {
-            alert(`🛍️ your cart · ${cartCount} item${cartCount !== 1 ? 's' : ''}`);
-        });
-
-        document.getElementById('newsletterForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = newsletterEmail.value.trim();
-            if (!email || !email.includes('@')) {
-                newsletterMsg.textContent = 'please enter a valid email ✧';
-                newsletterMsg.style.color = '#d4a0a0';
-                return;
-            }
-            newsletterMsg.textContent = '🎐 thank you, sweet one!';
-            newsletterMsg.style.color = '#b5a6b5';
-            newsletterEmail.value = '';
-            setTimeout(() => newsletterMsg.textContent = '', 3000);
-        });
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // ---- init ----
-        renderCategories();
-        renderProducts(PRODUCTS);
-        renderTestimonials();
-        updateCart();
-
+        // close on resize
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) { mobileMenu.style.display = 'none';
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>'; }
+            if (window.innerWidth > 700) {
+                mobileMenu.style.display = 'none';
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            }
         });
 
-        console.log('✧ Velora — girly & aesthetic demo ✧');
+        // ---- initial: show stage1 by default (but hidden stages are hidden) ----
+        // ensure only stage1 is visible
+        showStage('stage1');
+
+        console.log('💌 proposal adventure — no reject, only love.');
     </script>
 </body>
 </html>
