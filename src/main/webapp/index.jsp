@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velora — aesthetic & classy</title>
-
-    <!-- Fonts & Icons -->
+    <title>Velora · girly & aesthetic</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-
     <style>
-        /* ----- ROOT : soft & classy ----- */
+        /* ----- ROOT : soft pink & girly ----- */
         * {
             margin: 0;
             padding: 0;
@@ -18,19 +15,19 @@
         }
 
         :root {
-            --bg: #fcf8f5;
+            --bg: #fef6f9;
             --card: #ffffff;
-            --soft-pink: #fce4e0;
-            --rose: #d4a0a0;
-            --rose-dark: #b5838d;
-            --mauve: #b5a6b5;
-            --text: #2e2532;
-            --text-soft: #5e4b5a;
-            --muted: #9b8a96;
-            --shadow: 0 12px 32px rgba(160, 120, 140, 0.08);
-            --shadow-hover: 0 20px 48px rgba(160, 120, 140, 0.14);
-            --radius: 28px;
-            --radius-sm: 14px;
+            --pink-soft: #ffe3ed;
+            --pink-mid: #fbc4d5;
+            --pink-rose: #e8a0b4;
+            --rose-dark: #c87a8e;
+            --text: #3d2a33;
+            --text-soft: #6b4b57;
+            --muted: #b3929e;
+            --shadow: 0 12px 32px rgba(200, 120, 140, 0.10);
+            --shadow-hover: 0 20px 48px rgba(200, 120, 140, 0.18);
+            --radius: 40px;
+            --radius-sm: 24px;
             --transition: 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.1);
             --font-serif: 'DM Serif Display', serif;
             --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -42,16 +39,16 @@
             font-family: var(--font-sans);
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            padding: 0 16px;
+            padding: 0 12px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 16px;
         }
 
-        /* ----- buttons ----- */
+        /* ----- buttons : cute & rounded ----- */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -69,32 +66,32 @@
         }
 
         .btn-primary {
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
-            border-color: var(--rose);
+            border-color: var(--pink-rose);
         }
 
         .btn-primary:hover {
             background: var(--rose-dark);
             border-color: var(--rose-dark);
             transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(181, 131, 141, 0.25);
+            box-shadow: 0 12px 28px rgba(200, 120, 140, 0.25);
         }
 
         .btn-soft {
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             color: var(--rose-dark);
-            border-color: var(--soft-pink);
+            border-color: var(--pink-soft);
         }
 
         .btn-soft:hover {
-            background: #f5d6d0;
+            background: #fddae6;
             transform: translateY(-3px);
         }
 
         .btn-outline {
             background: transparent;
-            border-color: rgba(46, 37, 50, 0.15);
+            border-color: rgba(61, 42, 51, 0.12);
             color: var(--text);
         }
 
@@ -109,17 +106,17 @@
             font-size: 12px;
         }
 
-        /* ----- HEADER (soft & airy) ----- */
+        /* ----- HEADER : dreamy & transparent ----- */
         header {
             padding: 12px 0;
-            background: rgba(252, 248, 245, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(181, 166, 181, 0.12);
+            background: rgba(255, 245, 248, 0.7);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 200, 215, 0.25);
             position: sticky;
             top: 0;
             z-index: 50;
-            border-radius: 0 0 32px 32px;
+            border-radius: 0 0 40px 40px;
             margin-bottom: 10px;
         }
 
@@ -136,15 +133,15 @@
             align-items: center;
             gap: 6px;
             font-family: var(--font-serif);
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 400;
             letter-spacing: -0.3px;
             color: var(--text);
         }
 
         .brand i {
-            color: var(--rose);
-            font-size: 22px;
+            color: var(--pink-rose);
+            font-size: 24px;
         }
 
         .brand .accent {
@@ -154,12 +151,12 @@
 
         .nav-links {
             display: flex;
-            gap: 4px;
+            gap: 2px;
             list-style: none;
         }
 
         .nav-links a {
-            padding: 6px 16px;
+            padding: 6px 18px;
             border-radius: 40px;
             font-size: 14px;
             font-weight: 500;
@@ -170,14 +167,14 @@
 
         .nav-links a:hover,
         .nav-links a.active {
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             color: var(--rose-dark);
         }
 
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 2px;
         }
 
         .icon-btn {
@@ -194,7 +191,7 @@
         }
 
         .icon-btn:hover {
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             color: var(--rose-dark);
         }
 
@@ -206,7 +203,7 @@
             position: absolute;
             top: -2px;
             right: -2px;
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
             font-size: 10px;
             font-weight: 700;
@@ -220,7 +217,7 @@
 
         .mobile-toggle {
             display: none;
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             border: none;
             width: 40px;
             height: 40px;
@@ -232,7 +229,7 @@
         #mobileMenu {
             display: none;
             background: white;
-            border-radius: 28px;
+            border-radius: 32px;
             padding: 18px 20px;
             margin-top: 8px;
             box-shadow: var(--shadow);
@@ -257,14 +254,14 @@
         }
 
         #mobileMenu ul a:hover {
-            background: var(--soft-pink);
+            background: var(--pink-soft);
         }
 
-        /* ----- HERO (cute & minimal) ----- */
+        /* ----- HERO : girly & dreamy ----- */
         .hero {
-            background: linear-gradient(145deg, #faf1ed, #f5e8e4);
-            border-radius: 42px;
-            padding: 48px 32px;
+            background: linear-gradient(145deg, #fcecf2, #f9e0e9);
+            border-radius: 48px;
+            padding: 48px 36px;
             margin: 12px 0 20px;
             position: relative;
             overflow: hidden;
@@ -272,14 +269,14 @@
         }
 
         .hero::after {
-            content: "✦";
+            content: "♡";
             position: absolute;
-            right: 20px;
+            right: 24px;
             bottom: 20px;
             font-size: 80px;
-            opacity: 0.12;
-            color: var(--rose);
-            transform: rotate(8deg);
+            opacity: 0.10;
+            color: var(--pink-rose);
+            transform: rotate(-4deg);
         }
 
         .hero h1 {
@@ -288,7 +285,7 @@
             font-weight: 400;
             line-height: 1.15;
             letter-spacing: -0.5px;
-            max-width: 540px;
+            max-width: 520px;
         }
 
         .hero h1 i {
@@ -298,7 +295,7 @@
 
         .hero p {
             color: var(--text-soft);
-            max-width: 420px;
+            max-width: 400px;
             margin: 10px 0 24px;
             font-size: 15px;
             font-weight: 400;
@@ -306,15 +303,15 @@
 
         .hero .badge {
             display: inline-block;
-            background: rgba(212, 160, 160, 0.16);
+            background: rgba(232, 160, 180, 0.15);
             color: var(--rose-dark);
-            padding: 4px 18px;
+            padding: 4px 20px;
             border-radius: 60px;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 0.5px;
             margin-bottom: 14px;
-            border: 0.5px solid rgba(212, 160, 160, 0.2);
+            border: 0.5px solid rgba(232, 160, 180, 0.2);
         }
 
         .hero-actions {
@@ -364,10 +361,10 @@
 
         .view-all:hover {
             gap: 12px;
-            color: var(--rose);
+            color: var(--pink-rose);
         }
 
-        /* ----- categories : cute pill style ----- */
+        /* ----- categories : pill style girly ----- */
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -388,14 +385,14 @@
         .cat-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-hover);
-            border-color: var(--soft-pink);
+            border-color: var(--pink-mid);
         }
 
         .cat-card .icon-wrap {
             width: 48px;
             height: 48px;
             border-radius: 60px;
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             display: grid;
             place-items: center;
             margin: 0 auto 8px;
@@ -405,7 +402,7 @@
         }
 
         .cat-card:hover .icon-wrap {
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
         }
 
@@ -420,7 +417,7 @@
             color: var(--muted);
         }
 
-        /* ----- product cards : soft & airy ----- */
+        /* ----- product cards : girly & soft ----- */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -429,7 +426,7 @@
 
         .product-card {
             background: white;
-            border-radius: 32px;
+            border-radius: 36px;
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: var(--transition);
@@ -441,11 +438,11 @@
         .product-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-hover);
-            border-color: var(--soft-pink);
+            border-color: var(--pink-mid);
         }
 
         .product-card .img-wrap {
-            background: #faf3f0;
+            background: #fdf2f5;
             aspect-ratio: 1/1;
             position: relative;
             overflow: hidden;
@@ -466,7 +463,7 @@
             position: absolute;
             top: 14px;
             left: 14px;
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
             font-size: 10px;
             font-weight: 600;
@@ -476,7 +473,7 @@
         }
 
         .product-card .badge.sale {
-            background: #f3d5c0;
+            background: #fad5d0;
             color: var(--text);
         }
 
@@ -486,7 +483,7 @@
             right: 14px;
             width: 34px;
             height: 34px;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.75);
             backdrop-filter: blur(4px);
             border-radius: 40px;
             border: none;
@@ -499,7 +496,7 @@
 
         .product-card .wish-btn:hover {
             background: white;
-            color: var(--rose);
+            color: var(--pink-rose);
             transform: scale(1.08);
         }
 
@@ -542,7 +539,7 @@
         }
 
         .product-card .body .rating {
-            color: #e3b3a0;
+            color: #f0b0b0;
             font-size: 13px;
             margin-top: 4px;
         }
@@ -562,7 +559,7 @@
             flex: 1;
             padding: 10px 0;
             border-radius: 60px;
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             color: var(--rose-dark);
             font-weight: 600;
             font-size: 13px;
@@ -575,20 +572,20 @@
         }
 
         .product-card .footer .add-btn:hover {
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
         }
 
         .product-card .footer .add-btn.added {
-            background: #b7cfc4;
+            background: #c9d9d0;
             color: white;
         }
 
-        /* ----- DEAL : elegant spotlight ----- */
+        /* ----- DEAL : romantic & elegant ----- */
         .deal-wrap {
             display: flex;
             background: white;
-            border-radius: 42px;
+            border-radius: 44px;
             overflow: hidden;
             box-shadow: var(--shadow);
             border: 1px solid rgba(255, 255, 255, 0.6);
@@ -596,7 +593,7 @@
 
         .deal-wrap .deal-img {
             flex: 0 0 46%;
-            background: #f3e8e3;
+            background: #f8e4ea;
             min-height: 240px;
         }
 
@@ -614,7 +611,7 @@
         }
 
         .deal-wrap .deal-content .tag {
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             color: var(--rose-dark);
             padding: 4px 18px;
             border-radius: 60px;
@@ -703,14 +700,14 @@
             height: 4px;
         }
         .testimonials-scroll::-webkit-scrollbar-thumb {
-            background: var(--soft-pink);
+            background: var(--pink-mid);
             border-radius: 20px;
         }
 
         .testimonial-card {
             flex: 0 0 300px;
             background: white;
-            border-radius: 32px;
+            border-radius: 36px;
             padding: 24px 26px;
             box-shadow: var(--shadow);
             scroll-snap-align: start;
@@ -723,7 +720,7 @@
         }
 
         .testimonial-card .stars {
-            color: #eac4b4;
+            color: #f0b0b0;
             font-size: 15px;
             letter-spacing: 2px;
             margin-bottom: 8px;
@@ -748,7 +745,7 @@
             height: 40px;
             border-radius: 60px;
             object-fit: cover;
-            background: var(--soft-pink);
+            background: var(--pink-soft);
         }
 
         .testimonial-card .author .name {
@@ -761,9 +758,9 @@
             color: var(--muted);
         }
 
-        /* ----- newsletter : cute & soft ----- */
+        /* ----- newsletter : pretty & pink ----- */
         .newsletter-wrap {
-            background: linear-gradient(145deg, #f5e8e4, #faf1ed);
+            background: linear-gradient(145deg, #fcecf2, #f9e0e9);
             border-radius: 48px;
             padding: 40px 44px;
             display: flex;
@@ -799,7 +796,7 @@
             min-width: 180px;
             padding: 12px 20px;
             border-radius: 60px;
-            border: 1.5px solid rgba(212, 160, 160, 0.2);
+            border: 1.5px solid rgba(232, 160, 180, 0.2);
             background: white;
             font-size: 14px;
             transition: var(--transition);
@@ -807,14 +804,14 @@
         }
 
         .newsletter-wrap form input:focus {
-            border-color: var(--rose);
-            box-shadow: 0 0 0 4px rgba(212, 160, 160, 0.1);
+            border-color: var(--pink-rose);
+            box-shadow: 0 0 0 4px rgba(232, 160, 180, 0.1);
         }
 
         .newsletter-wrap form .btn {
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
-            border-color: var(--rose);
+            border-color: var(--pink-rose);
             padding: 12px 28px;
         }
 
@@ -829,11 +826,11 @@
             color: var(--rose-dark);
         }
 
-        /* ----- footer ----- */
+        /* ----- footer : delicate ----- */
         footer {
             padding: 32px 0 16px;
             margin-top: 8px;
-            border-top: 1px solid rgba(181, 166, 181, 0.12);
+            border-top: 1px solid rgba(200, 120, 140, 0.10);
         }
 
         .footer-grid {
@@ -859,7 +856,7 @@
             width: 36px;
             height: 36px;
             border-radius: 40px;
-            background: var(--soft-pink);
+            background: var(--pink-soft);
             display: grid;
             place-items: center;
             color: var(--rose-dark);
@@ -869,7 +866,7 @@
         }
 
         .footer-grid .brand-col .socials a:hover {
-            background: var(--rose);
+            background: var(--pink-rose);
             color: white;
         }
 
@@ -901,7 +898,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 14px;
-            border-top: 1px solid rgba(181, 166, 181, 0.08);
+            border-top: 1px solid rgba(200, 120, 140, 0.08);
             color: var(--muted);
             font-size: 12px;
         }
@@ -981,8 +978,8 @@
         }
     </style>
 </head>
-
 <body>
+
     <!-- HEADER -->
     <header>
         <div class="container header-inner">
@@ -1028,6 +1025,7 @@
         </div>
     </header>
 
+    <!-- MAIN -->
     <main>
         <!-- HERO -->
         <section class="container hero">
@@ -1364,7 +1362,7 @@
             updateCart();
             const orig = this.innerHTML;
             this.innerHTML = '<i class="fas fa-check"></i> added!';
-            this.style.background = '#b7cfc4';
+            this.style.background = '#c9d9d0';
             setTimeout(() => { this.innerHTML = orig;
                 this.style.background = ''; }, 1500);
         });
@@ -1400,7 +1398,7 @@
                 mobileToggle.innerHTML = '<i class="fas fa-bars"></i>'; }
         });
 
-        console.log('✧ Velora — classy & aesthetic demo ✧');
+        console.log('✧ Velora — girly & aesthetic demo ✧');
     </script>
 </body>
 </html>
